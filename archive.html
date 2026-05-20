@@ -203,6 +203,74 @@
     </div>
   </div>
 
+<div class="ep-section" id="ep19">
+  <div class="ep-card">
+    <div class="ep-card-header" onclick="toggleTranscript('t19')">
+      <div class="ep-header-left">
+        <p class="ep-num">Episode 19</p>
+        <p class="ep-title-main">[EPISODE TITLE]</p>
+        <p class="ep-guest-line">with [Guest Name] &mdash; [Guest Title]</p>
+        <p class="ep-desc-short">[Episode description — 2 to 3 sentences.]</p>
+        <div class="ep-tags">
+          <span class="ep-tag">[Tag 1]</span>
+          <span class="ep-tag">[Tag 2]</span>
+          <span class="ep-tag">[Tag 3]</span>
+        </div>
+      </div>
+      <div class="ep-header-right">
+        <a href="https://open.spotify.com/show/LITS-X" target="_blank" rel="noopener" class="ep-listen-btn" onclick="event.stopPropagation()">&#9654; Listen</a>
+        <button class="ep-toggle" id="btn-t19"><span>Read Transcript</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      </div>
+    </div>
+   
+  <div class="transcript-panel" id="t19">
+      <div class="transcript-toolbar">
+        <span class="tt-label">Transcript &mdash; Ep. 19</span>
+        <div class="tt-search-wrap">
+          <svg class="tt-search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" class="tt-search" id="search-t19" placeholder="Search this transcript..." oninput="searchTranscript('t19',this.value)">
+        </div>
+        <span class="tt-count" id="count-t19"></span>
+      </div>
+      <div class="transcript-body" id="body-t19"><div class="t-loading" id="load-t19">Loading transcript</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="ep-section" id="ep18">
+  <div class="ep-card">
+    <div class="ep-card-header" onclick="toggleTranscript('t18')">
+      <div class="ep-header-left">
+        <p class="ep-num">Episode 18</p>
+        <p class="ep-title-main">[EPISODE TITLE]</p>
+        <p class="ep-guest-line">with [Guest Name] &mdash; [Guest Title]</p>
+        <p class="ep-desc-short">[Episode description — 2 to 3 sentences.]</p>
+        <div class="ep-tags">
+          <span class="ep-tag">[Tag 1]</span>
+          <span class="ep-tag">[Tag 2]</span>
+          <span class="ep-tag">[Tag 3]</span>
+        </div>
+      </div>
+      <div class="ep-header-right">
+        <a href="https://open.spotify.com/show/LITS-X" target="_blank" rel="noopener" class="ep-listen-btn" onclick="event.stopPropagation()">&#9654; Listen</a>
+        <button class="ep-toggle" id="btn-t18"><span>Read Transcript</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      </div>
+    </div>
+   
+    <div class="transcript-panel" id="t18">
+      <div class="transcript-toolbar">
+        <span class="tt-label">Transcript &mdash; Ep. 18</span>
+        <div class="tt-search-wrap">
+          <svg class="tt-search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" class="tt-search" id="search-t18" placeholder="Search this transcript..." oninput="searchTranscript('t18',this.value)">
+        </div>
+        <span class="tt-count" id="count-t18"></span>
+      </div>
+      <div class="transcript-body" id="body-t18"><div class="t-loading" id="load-t18">Loading transcript</div></div>
+    </div>
+  </div>
+</div>
+ 
 </div>
 
 <button id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -210,7 +278,7 @@
 </button>
 
 <script>
-const TRANSCRIPTS = { 't21':'Episode_21.txt', 't20':'Episode_20.txt' };
+const TRANSCRIPTS = { 't21':'Episode_21.txt', 't20':'Episode_20.txt' 't19': 'Episode_19.txt', 't18': 'Episode_18.txt',};
 const cache = {};
 
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
