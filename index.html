@@ -61,9 +61,10 @@
   #hero {
     min-height: 100vh; padding: 9rem 4rem 5rem;
     display: grid; grid-template-columns: 1fr 1fr;
-    align-items: center; gap: 3rem;
+    align-items: start; gap: 3rem;
     background: var(--white);
   }
+  #hero > div { min-width: 0; }
   .hero-eyebrow {
     display: inline-flex; align-items: center; gap: 0.6rem;
     font-family: var(--fc); font-size: 0.75rem; font-weight: 600;
